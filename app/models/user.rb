@@ -3,7 +3,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   
   devise :database_authenticatable, :registerable,
-  :recoverable, :rememberable, :trackable, :validatable,:omniauthable
+  :recoverable, :rememberable, :trackable, :validatable,:omniauthable, :omniauth_providers => [:linkedin]
+
+  
 
   def self.connect_to_linkedin(auth, signed_in_resource=nil)
   	user = User.where(:provider => auth.provider, :uid => auth.uid).first
@@ -20,7 +22,11 @@ class User < ApplicationRecord
   				uid:auth.uid,
   				email:auth.info.email,
   				password:Devise.friendly_token[0,20],
+<<<<<<< HEAD
           headline: auth.headline,
+=======
+          
+>>>>>>> a96f973b1ee486a85d6f3cd53c620492630af6da
   				)
   		end
 

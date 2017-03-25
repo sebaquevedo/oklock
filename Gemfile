@@ -12,7 +12,6 @@ gem 'devise'
 gem 'omniauth', '~> 1.3', '>= 1.3.1'
 gem 'omniauth-linkedin'
 
-
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

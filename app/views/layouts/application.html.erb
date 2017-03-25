@@ -14,14 +14,24 @@
 	<%= yield %>
 
 	<% if user_signed_in? %>
-	Signed in as <%= current_user.name %>. Not you?
- 
+	<ul> 
+		<li>Signed in as <%= current_user.name %>. Not you?</li>
+		<li> <%= current_user.provider %></li>
+		<li> <%= current_user.uid %></li>
+		<li> <%= current_user.email %></li>
+			
 
+
+		
+	</ul>
 	<%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
 	<% else %>
 	<%= link_to "Sign up", new_user_registration_path %> or
 	<%= link_to "Sign in", new_user_session_path %>
 	<%= link_to "Sign in with Linkedin",user_linkedin_omniauth_authorize_path %>
+	
+
+	
 	<% end %>
 
 
