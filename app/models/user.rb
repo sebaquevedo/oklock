@@ -20,6 +20,7 @@ class User < ApplicationRecord
   				uid:auth.uid,
   				email:auth.info.email,
   				password:Devise.friendly_token[0,20],
+          headline: auth.headline,
   				)
   		end
 
