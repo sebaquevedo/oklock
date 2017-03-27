@@ -3,12 +3,17 @@
 Devise.setup do |config|
 
   require 'omniauth-linkedin'
+
   
   Rails.application.config.middleware.use OmniAuth::Builder do
-     provider :linkedin, "78y6ary7vhvc0u", "2uxtRnAvmuJsYP7i",  :fields => ["id", "email-address", "first-name", "last-name", "headline", "industry", "picture-url", "public-profile-url", "location", "connections"]
-      
-   end
-  # The secret key used by Devise. Devise uses this key to generate
+     provider :linkedin,
+      "78y6ary7vhvc0u","2uxtRnAvmuJsYP7i",
+    :scope => "r_basicprofile r_emailaddress", 
+    :fields => ['id', 'email-address', 'first-name', 'last-name', 'headline', 'location', 'industry', 'picture-urls::(original)', 'public-profile-url','positions']
+
+    
+  end
+  # The secret key used by Devise. Devise uses This key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`

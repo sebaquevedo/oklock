@@ -13,15 +13,18 @@
 	<p class="alert"><%= alert %></p>
 	<%= yield %>
 
+
+
 	<% if user_signed_in? %>
+
 	<ul> 
 		<li>Signed in as <%= current_user.name %>. Not you?</li>
 		<li> <%= current_user.provider %></li>
 		<li> <%= current_user.uid %></li>
 		<li> <%= current_user.email %></li>
+		<li><%= current_user.image%></li>
 			
-
-
+	<li><%= link_to "basic_profile", "https://api.linkedin.com/v1/people/~:(id,num-connections,picture-url)?format=json"%></li>
 		
 	</ul>
 	<%= link_to "Sign out", destroy_user_session_path,:method => :delete %>

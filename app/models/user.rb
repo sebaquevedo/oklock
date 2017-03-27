@@ -5,31 +5,16 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable,:omniauthable, :omniauth_providers => [:linkedin]
 
-  
+  def self.from_omniauth(auth)
+     user = where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0,20]
+      user.name = auth.info.name 
+      user.image = auth.info.image  # assuming the user model has a name
+    # If you are using confirmable and the provider(s) you use validate emails, 
+    # uncomment the line below to skip the confirmation emails.
+    # user.skip_confirmation!
+  end
+end
 
-  def self.connect_to_linkedin(auth, signed_in_resource=nil)
-  	user = User.where(:provider => auth.provider, :uid => auth.uid).first
-  	if user
-  		return user
-  	else
-  		registered_user = User.where(:email => auth.info.email).first
-  		if registered_user
-  			return registered_user
-  		else
-
-  			user = User.create(name:auth.info.first_name,
-  				provider:auth.provider,
-  				uid:auth.uid,
-  				email:auth.info.email,
-  				password:Devise.friendly_token[0,20],
-<<<<<<< HEAD
-          headline: auth.headline,
-=======
-          
->>>>>>> a96f973b1ee486a85d6f3cd53c620492630af6da
-  				)
-  		end
-
-  	end
-  end  
 end
