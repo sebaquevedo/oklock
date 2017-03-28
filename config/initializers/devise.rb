@@ -10,9 +10,11 @@ Devise.setup do |config|
       "78y6ary7vhvc0u","2uxtRnAvmuJsYP7i",
     :scope => "r_basicprofile r_emailaddress", 
     :fields => ['id', 'email-address', 'first-name', 'last-name', 'headline', 'location', 'industry', 'picture-urls::(original)', 'public-profile-url','positions']
-
     
   end
+
+
+ 
   # The secret key used by Devise. Devise uses This key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
