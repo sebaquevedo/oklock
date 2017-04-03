@@ -5,6 +5,7 @@
 	<%= csrf_meta_tags %>
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
@@ -12,7 +13,7 @@
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
 	<%= yield %>
-
+	
 
 
 	<% if user_signed_in? %>
@@ -25,17 +26,16 @@
 		<li><%= current_user.headline %></li>
 		<%= image_tag(current_user.image) %>
 
-		
-			
-	<li><%= link_to "basic_profile", "https://api.linkedin.com/v1/people/~:(id,num-connections,picture-url)?format=json"%></li>
-		
+
 	</ul>
-	<%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
+
+	<%= link_to "Salir", destroy_user_session_path,:method => :delete %>
 	<% else %>
-	<%= link_to "Sign up", new_user_registration_path %> or
-	<%= link_to "Sign in", new_user_session_path %>
-	<%= link_to "Sign in with Linkedin",user_linkedin_omniauth_authorize_path %>
-	
+	<ul>
+		<li><%= link_to "Registrate", new_user_registration_path %></li> 
+		<li><%= link_to "Ingresa", new_user_session_path %></li>
+		<li><%= link_to "Ingresa con LinkedIn",user_linkedin_omniauth_authorize_path %></li>	
+	</ul>
 
 	
 	<% end %>

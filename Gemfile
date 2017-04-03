@@ -11,8 +11,11 @@ gem 'rails', '~> 5.0.2'
 gem 'devise'
 gem 'omniauth', '~> 1.3', '>= 1.3.1'
 gem 'omniauth-linkedin'
-gem 'linkedin'
 gem 'pg'
+
+gem 'therubyracer'
+gem 'less-rails'
+gem "font-awesome-rails"
 
 
 # Use Puma as the app server
