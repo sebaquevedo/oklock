@@ -10,21 +10,30 @@
 </head>
 
 <body>
+
+	<%= yield %>
+	<%= render 'shared/navbar' %>
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
-	<%= yield %>
 	
-
 
 	<% if user_signed_in? %>
 
-	<ul> 
-		<li>Signed in as <%= current_user.name %>. Not you?</li>
+	<ul>
+	<% if  current_user.name.present? %>
+           <li>Signed in as <%= current_user.name %></li>
+        
+        <% else %>
+			<li>Signed in as <%= current_user.email %></li>
+        <%end  %>
+		
 		<li> <%= current_user.provider %></li>
 		<li> <%= current_user.uid %></li>
 		<li> <%= current_user.email %></li>
 		<li><%= current_user.headline %></li>
-		<%= image_tag(current_user.image) %>
+		<% if  current_user.image.present? %>
+           <%=  image_tag(current_user.image) %>
+        <%end  %>
 
 
 	</ul>
@@ -32,12 +41,12 @@
 	<%= link_to "Salir", destroy_user_session_path,:method => :delete %>
 	<% else %>
 	<ul>
-		<li><%= link_to "Registrate", new_user_registration_path %></li> 
+		<li><%= link_to "Registrate", new_user_registration_path %></li>
 		<li><%= link_to "Ingresa", new_user_session_path %></li>
-		<li><%= link_to "Ingresa con LinkedIn",user_linkedin_omniauth_authorize_path %></li>	
+		<li><%= link_to "Ingresa con LinkedIn",user_linkedin_omniauth_authorize_path %></li>
 	</ul>
 
-	
+
 	<% end %>
 
 

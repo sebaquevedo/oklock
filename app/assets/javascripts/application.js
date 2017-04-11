@@ -11,11 +11,20 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap.js
+//= require creative.js
+//= require gulpfile.js
+//= require jquery.magnific-popup.js
+//= require scrollreveal.js
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require bootstrap.js
-//= require creative.js
-//= require jquery.magnific-popup.js
-//= require scrollreveal.js
+
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});
+ 
+
+
+
 

@@ -16,7 +16,7 @@ gem 'pg'
 gem 'therubyracer'
 gem 'less-rails'
 gem "font-awesome-rails"
-
+gem 'rubocop', require: false
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
