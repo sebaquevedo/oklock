@@ -10,7 +10,22 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bootstrap.min.css
+ *= require normalize.css
+ *= require font-awesome.min.css
+ *= require linearicons.css
+ *= require scrollbar.css
+ *= require jquery-ui.css
+ *= require prettyPhoto.css
+ *= require owl.carousel.min.css 
+ *= require owl.theme.default.min.css
+ *= require jquery.countdown.css
+ *= require animate.css
+ *= require transitions.css
+ *= require main.css
+ *= require color.css
+ *= require responsive.css
  *= require_tree .
  *= require_self
- *= require bootstrap
+
  */
