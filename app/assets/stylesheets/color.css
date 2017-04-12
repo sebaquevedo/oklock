@@ -15,7 +15,7 @@ p a:hover,
 .alert-info strong,
 .tg-btnaddservices,
 .tg-weatherarea i{color: #42a5f5;}
-.tg-features li:nth-child(1) .tg-featurecontent h3{color: #ec407a;}
+.tg-features li:nth-child(1) .tg-featurecontent h3{color: #fa8b40;}
 .tg-features li:nth-child(3) .tg-featurecontent h3,
 .tg-memberinfo h5:hover a{color: #66bb6a;}
 .tg-addressinfo li a:hover,
@@ -45,7 +45,7 @@ blockquote:before,
 .alert-success strong,
 .tg-dashboardservice:hover .tg-servicetitle h2 a,
 .tg-imgandtitle h3 a:hover,
-.tg-pkgplanhead h4 span{color: #5dc560;}
+.tg-pkgplanhead h4 span{color: #fa8b40;}
 .tg-posteddate strong{color: #5c6bc0;}
 .tg-applicantapplied strong{color: #26a69a;}
 .tg-views strong,
@@ -99,23 +99,23 @@ blockquote:before,
 .tg-btndownloadattachment,
 .tg-dashboardappointment .tg-btntimeedit .tg-btnedite,
 .geo_distance.ui-slider .ui-slider-handle,
-.pin{background:#5dc560;}
+.pin{background:#fa8b40;}
 .tg-btnedite,
 .tg-uploadhead,
 .tg-uploadingbar:after,
 .tg-galleryimg figure figcaption .fa-check,
 .tg-expireytimecounter,
-.tg-timecounter{background:#5dc560;}
+.tg-timecounter{background:#fa8b40;}
 .tg-emailnavscroll .mCSB_dragger .mCSB_dragger_bar,
 .tg-horizontalthemescrollbar .mCSB_dragger .mCSB_dragger_bar,
-.tg-themescrollbar .mCSB_dragger .mCSB_dragger_bar{background: #5dc560 !important;}
+.tg-themescrollbar .mCSB_dragger .mCSB_dragger_bar{background: #fa8b40 !important;}
 .tg-recommendedradio .tg-radio input[type="radio"]:checked + label,
 .tg-recommendedradio .tg-radio input[type="radio"]:checked + label,
 .tg-datepicker .ui-datepicker td a.ui-state-active,
 .tg-datepicker .ui-datepicker td a:hover,
 .tg-datepicker .ui-widget-header a:hover,
 .tg-timeslotsradio .tg-radio input[type=radio]:checked + label,
-.tg-closemodal{background: #54b156;}
+.tg-closemodal{background: #fa8b40;}
 /*=============================================
 			Theme Border Color
 =============================================*/
@@ -139,9 +139,9 @@ input:focus,
 .tg-iosstylcheckbox input[type=checkbox]:checked + label,
 .tg-actionnav li:hover,
 .geo_distance.ui-slider .ui-slider-handle,
-.geo_distance.ui-slider .ui-slider-handle:hover{border-color: #5dc560;}
+.geo_distance.ui-slider .ui-slider-handle:hover{border-color: #fa8b40;}
 .tg-infoBox,
-.infoBox:after{border-color: #ef5350;}
+.infoBox:after{border-color: #fa8b40;}
 /*=============================================
 			Theme Categories Colors
 =============================================*/

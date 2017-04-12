@@ -22,7 +22,7 @@ def self.from_omniauth(auth)
 end
 
 def self.new_with_session(params, session)
-  byebug
+  
     super.tap do |user|
       if data = session["devise.linkedin_data"] && session["devise.linkedin_data"]["extra"]["raw_info"]
         user.email = data["email"] if user.email.blank?
