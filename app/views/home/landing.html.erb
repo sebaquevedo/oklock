@@ -1,0 +1,1424 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Oklock</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="<%= asset_path 'apple-touch-icon.png' %>">
+	<link rel="stylesheet" href="<%= asset_path 'bootstrap.min.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'normalize.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'font-awesome.min.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'linearicons.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'scrollbar.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'jquery-ui.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'prettyPhoto.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'owl.carousel.min.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'owl.theme.default.min.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'jquery.countdown.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'animate.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'transitions.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'main.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'color.css' %>">
+	<link rel="stylesheet" href="<%= asset_path 'responsive.css' %>">
+	<script src="<%= asset_path 'modernizr-2.8.3-respond-1.4.2.min.js' %>"></script>
+</head>
+<body class="tg-home tg-login">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+			Preloader Start
+	*************************************-->
+	<div class="preloader-outer">
+		<div class="pin"></div>
+		<div class="pulse"></div>
+	</div>
+	<!--************************************
+			Preloader End
+	*************************************-->
+	<!--************************************
+			Wrapper Start
+	*************************************-->
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		
+		<!--************************************
+				Home Slider Start
+		*************************************-->
+		<div class="tg-homebannerandslider">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="row">
+							<div class="tg-accordionandcategorysearch hidden-xs">
+								<div class="tg-categoreyaccordion">
+									<div class="tg-themescrollbar">
+										<div id="tg-accordion" class="tg-accordion" role="tablist" aria-multiselectable="true">
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-automotive tg-radio">
+													<input type="radio" id="tg-radioautomotive" name="tg-categories" value="automovice" checked>
+													<label for="tg-radioautomotive">
+														<span class="lnr lnr-car tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Automovil</span>
+															<span class="tg-typesandjobs">368 Oferentes</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocabservice" name="tg-categories" value="Cab Service">
+														<label for="tg-radiocabservice">
+															<span class="tg-categoryname">Consultoria</span>
+															<span class="tg-typesandjobs">609 Oferentes</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocarcareservicing" name="tg-categories" value="Car Care &amp; Servicing">
+														<label for="tg-radiocarcareservicing">
+															<span class="tg-categoryname">Servicios IT &amp; Soporte</span>
+															<span class="tg-typesandjobs">225 Oferentes</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocardealer" name="tg-categories" value="Car Dealer">
+														<label for="tg-radiocardealer">
+															<span class="tg-categoryname">Diseño Multimedia</span>
+															<span class="tg-typesandjobs">490 Oferentes</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiorentacar" name="tg-categories" value="Rent A Car">
+														<label for="tg-radiorentacar">
+															<span class="tg-categoryname">Coaching</span>
+															<span class="tg-typesandjobs">180 Oferentes</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiodenterpainter" name="tg-categories" value="Denter and Painter">
+														<label for="tg-radiodenterpainter">
+															<span class="tg-categoryname">RRHH outsourcing</span>
+															<span class="tg-typesandjobs">56 Oferentes </span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-beautypersonalcare tg-radio">
+													<input type="radio" id="tg-radiobeautypersonalcare" name="tg-categories" value="Beauty &amp; Personal Care">
+													<label for="tg-radiobeautypersonalcare">
+														<span class="lnr lnr-heart tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Programadores &amp; Desarrolladores</span>
+															<span class="tg-typesandjobs">345 Oferentes</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiobeautyparlor" name="tg-categories" value="Beauty Parlor">
+														<label for="tg-radiobeautyparlor">
+															<span class="tg-categoryname">Beauty Parlor</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiospacenter" name="tg-categories" value="Spa Center">
+														<label for="tg-radiospacenter">
+															<span class="tg-categoryname">Spa Center</span>
+															<span class="tg-typesandjobs">1180 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiomassagecenter" name="tg-categories" value="Massage Center">
+														<label for="tg-radiomassagecenter">
+															<span class="tg-categoryname">Massage Center</span>
+															<span class="tg-typesandjobs">711 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-business tg-radio">
+													<input type="radio" id="tg-radiobusiness" name="tg-categories" value="Business">
+													<label for="tg-radiobusiness">
+														<span class="lnr lnr-apartment tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Negocios</span>
+															<span class="tg-typesandjobs">2478 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioeventorganizer" name="tg-categories" value="Event Organizer">
+														<label for="tg-radioeventorganizer">
+															<span class="tg-categoryname">Event Organizer</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiofinance&amp;legal" name="tg-categories" value="Finance &amp; Legal">
+														<label for="tg-radiofinance&amp;legal">
+															<span class="tg-categoryname">Finance &amp; Legal</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiomarketing" name="tg-categories" value="Marketing">
+														<label for="tg-radiomarketing">
+															<span class="tg-categoryname">Marketing</span>
+															<span class="tg-typesandjobs">1180 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioitwebdevelopment" name="tg-categories" value="IT/Web Development">
+														<label for="tg-radioitwebdevelopment">
+															<span class="tg-categoryname">IT/Web Development</span>
+															<span class="tg-typesandjobs">711 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-childcare tg-radio">
+													<input type="radio" id="tg-radiochildcare" name="tg-categories" value="Bienestar">
+													<label for="tg-radiochildcare">
+														<span class="lnr lnr-smile tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Bienestar</span>
+															<span class="tg-typesandjobs">2655 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiochildcarecenter" name="tg-categories" value="Bienestar Center">
+														<label for="tg-radiochildcarecenter">
+															<span class="tg-categoryname">Bienestar</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiopediatrician" name="tg-categories" value="Pediatrician">
+														<label for="tg-radiopediatrician">
+															<span class="tg-categoryname">Pediatrician</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiokidstraining" name="tg-categories" value="Special Kids Training">
+														<label for="tg-radiokidstraining">
+															<span class="tg-categoryname">Special Kids Training</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-cleaning tg-radio">
+													<input type="radio" id="tg-radiocleaning" name="tg-categories" value="Cleaning">
+													<label for="tg-radiocleaning">
+														<span class="lnr lnr-magic-wand tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Diseño</span>
+															<span class="tg-typesandjobs">4515 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiohomecleaning" name="tg-categories" value="Home Cleaning">
+														<label for="tg-radiohomecleaning">
+															<span class="tg-categoryname">Diseño Web</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocommecialcleaning" name="tg-categories" value="Commercial Cleaning">
+														<label for="tg-radiocommecialcleaning">
+															<span class="tg-categoryname">Diseño Grafico</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiolaundry" name="tg-categories" value="Laundry">
+														<label for="tg-radiolaundry">
+															<span class="tg-categoryname">Laundry</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocarpetcleaning" name="tg-categories" value="Carpet Cleaning">
+														<label for="tg-radiocarpetcleaning">
+															<span class="tg-categoryname">Diseño Industrial</span>
+															<span class="tg-typesandjobs">1180 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-computermobile tg-radio">
+													<input type="radio" id="tg-radiocomputermobile" name="tg-categories" value="Computer &amp; Mobile Service">
+													<label for="tg-radiocomputermobile">
+														<span class="lnr lnr-laptop tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Computer &amp; Mobile Service</span>
+															<span class="tg-typesandjobs">1015 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiomobilerepair" name="tg-categories" value="Mobile Repair">
+														<label for="tg-radiomobilerepair">
+															<span class="tg-categoryname">Mobile Repair</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocomputerlaptoprepair" name="tg-categories" value="Computer &amp; Laptop Repair">
+														<label for="tg-radiocomputerlaptoprepair">
+															<span class="tg-categoryname">Computer &amp; Laptop Repair</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-fooddrinks tg-radio">
+													<input type="radio" id="tg-radiofooddrinks" name="tg-categories" value="Food &amp; Drinks">
+													<label for="tg-radiofooddrinks">
+														<span class="lnr lnr-coffee-cup tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Food &amp; Drinks</span>
+															<span class="tg-typesandjobs">1515 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiopubs&amp;bars" name="tg-categories" value="Pubs &amp; Bars">
+														<label for="tg-radiopubs&amp;bars">
+															<span class="tg-categoryname">Pubs &amp; Bars</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioresturant" name="tg-categories" value="Resturant">
+														<label for="tg-radioresturant">
+															<span class="tg-categoryname">Resturant</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioCafe" name="tg-categories" value="Cafe">
+														<label for="tg-radioCafe">
+															<span class="tg-categoryname">Cafe</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiofastfood" name="tg-categories" value="Fast Food">
+														<label for="tg-radiofastfood">
+															<span class="tg-categoryname">Fast Food</span>
+															<span class="tg-typesandjobs">1180 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-generallabor tg-radio">
+													<input type="radio" id="tg-radiogenerallabor" name="tg-categories" value="General Labor">
+													<label for="tg-radiogenerallabor">
+														<span class="lnr lnr-users tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">General Labor</span>
+															<span class="tg-typesandjobs">2815 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocarpenter" name="tg-categories" value="Carpenter">
+														<label for="tg-radiocarpenter">
+															<span class="tg-categoryname">Carpenter</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioplumber" name="tg-categories" value="Plumber">
+														<label for="tg-radioplumber">
+															<span class="tg-categoryname">Plumber</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioelectrician" name="tg-categories" value="Electrician">
+														<label for="tg-radioelectrician">
+															<span class="tg-categoryname">Electrician</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiopainter" name="tg-categories" value="Painter">
+														<label for="tg-radiopainter">
+															<span class="tg-categoryname">Painter</span>
+															<span class="tg-typesandjobs">1180 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-constructionrevovation tg-radio">
+													<input type="radio" id="tg-radioconstructionrevovation" name="tg-categories" value="Construction &amp; Renovation">
+													<label for="tg-radioconstructionrevovation">
+														<span class="lnr lnr-construction tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Construction &amp; Renovation</span>
+															<span class="tg-typesandjobs">9015 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiorenovation" name="tg-categories" value="Renovation Companies">
+														<label for="tg-radiorenovation">
+															<span class="tg-categoryname">Renovation Companies</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocontruction" name="tg-categories" value="Contruction Companies">
+														<label for="tg-radiocontruction">
+															<span class="tg-categoryname">Contruction Companies</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-healthfitness tg-radio">
+													<input type="radio" id="tg-radiohealthfitness" name="tg-categories" value="Health &amp; Fitness">
+													<label for="tg-radiohealthfitness">
+														<span class="lnr lnr-heart-pulse tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Health &amp; Fitness</span>
+															<span class="tg-typesandjobs">4515 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiogymcenter" name="tg-categories" value="Gym Center">
+														<label for="tg-radiogymcenter">
+															<span class="tg-categoryname">Gym Center</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioyogacenter" name="tg-categories" value="Yoga Center">
+														<label for="tg-radioyogacenter">
+															<span class="tg-categoryname">Yoga Center</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioneurosurgeon" name="tg-categories" value="Neurosurgeon">
+														<label for="tg-radioneurosurgeon">
+															<span class="tg-categoryname">Neurosurgeon</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiophysician" name="tg-categories" value="Physician">
+														<label for="tg-radiophysician">
+															<span class="tg-categoryname">Physician</span>
+															<span class="tg-typesandjobs">1180 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocardiologist" name="tg-categories" value="Cardiologist">
+														<label for="tg-radiocardiologist">
+															<span class="tg-categoryname">Cardiologist</span>
+															<span class="tg-typesandjobs">711 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiodentist" name="tg-categories" value="Dentist">
+														<label for="tg-radiodentist">
+															<span class="tg-categoryname">Dentist</span>
+															<span class="tg-typesandjobs">711 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-petcare tg-radio">
+													<input type="radio" id="tg-radiopetcare" name="tg-categories" value="Pet Care">
+													<label for="tg-radiopetcare">
+														<span class="lnr lnr-paw tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Pet Care</span>
+															<span class="tg-typesandjobs">3160 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiopetcarecenter" name="tg-categories" value="Pet Care Center">
+														<label for="tg-radiopetcarecenter">
+															<span class="tg-categoryname">Pet Care Center</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiopetdealer" name="tg-categories" value="Pet Dealer">
+														<label for="tg-radiopetdealer">
+															<span class="tg-categoryname">Pet Dealer</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiowildanimalcare" name="tg-categories" value="Wild Animal Care">
+														<label for="tg-radiowildanimalcare">
+															<span class="tg-categoryname">Wild Animal Care</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-traningeducation tg-radio">
+													<input type="radio" id="tg-radiotraningeducation" name="tg-categories" value="Traning &amp; Education">
+													<label for="tg-radiotraningeducation">
+														<span class="lnr lnr-book tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Traning &amp; Education</span>
+															<span class="tg-typesandjobs">1208 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiocardriving" name="tg-categories" value="Car Driving">
+														<label for="tg-radiocardriving">
+															<span class="tg-categoryname">Car Driving</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioselfmotivationcenter" name="tg-categories" value="Self Motivation Center">
+														<label for="tg-radioselfmotivationcenter">
+															<span class="tg-categoryname">Self Motivation Center</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioeducationinstitute" name="tg-categories" value="Education Institute">
+														<label for="tg-radioeducationinstitute">
+															<span class="tg-categoryname">Education Institute</span>
+															<span class="tg-typesandjobs">490 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radioanimaltrainingcenter" name="tg-categories" value="Animal Training Center">
+														<label for="tg-radioanimaltrainingcenter">
+															<span class="tg-categoryname">Animal Training Center</span>
+															<span class="tg-typesandjobs">1180 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="tg-panel">
+												<div class="tg-accordionheading tg-transportationtravel tg-radio">
+													<input type="radio" id="tg-radiotransportationtravel" name="tg-categories" value="Transportation &amp; Travel">
+													<label for="tg-radiotransportationtravel">
+														<span class="lnr lnr-train tg-categoryicon"></span>
+														<span class="tg-catenameandtypes">
+															<span class="tg-categoryname">Transportation &amp; Travel</span>
+															<span class="tg-typesandjobs">1715 Providers</span>
+														</span>
+													</label>
+												</div>
+												<div class="tg-panelcontent">
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiopacker&amp;movers" name="tg-categories" value="Packer &amp; Movers">
+														<label for="tg-radiopacker&amp;movers">
+															<span class="tg-categoryname">Packer &amp; Movers</span>
+															<span class="tg-typesandjobs">609 Providers</span>
+														</label>
+													</div>
+													<div class="tg-subcategoryradio tg-radio">
+														<input type="radio" id="tg-radiotourtravelservice" name="tg-categories" value="Tour &amp; Travel Service">
+														<label for="tg-radiotourtravelservice">
+															<span class="tg-categoryname">Tour &amp; Travel Service</span>
+															<span class="tg-typesandjobs">225 Providers</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tg-categorysearch">
+									<form class="tg-formtheme tg-formcategorysearch">
+										<fieldset>
+											<input type="search" name="search" class="form-control" placeholder="Search Category">
+											<button class="tg-btnsearch" type="submit"><i class="lnr lnr-magnifier"></i></button>
+										</fieldset>
+									</form>
+								</div>
+							</div>
+							<div class="tg-searchbox">
+								<form class="tg-formtheme tg-formsearch">
+									<fieldset>
+										<legend>Busca tu servicio entre miles de Profesionales Calificados</legend>
+										<div class="form-group">
+											<input type="text" name="keyword" class="form-control" placeholder="Palabra Clave">
+										</div>
+										<div class="form-group hidden-sm hidden-md hidden-lg">
+											<input type="text" name="category" class="form-control" placeholder="Select Category">
+										</div>
+										<div class="form-group tg-inputwithicon">
+											<div class="locate-me-wrap">
+												<div id="location-pickr-map" class="elm-display-none"></div>
+												<input type="text"  autocomplete="on" id="location-address" value="" name="geo_location" placeholder="Geo location" class="form-control">
+												<a href="javascript:;" class="geolocate"><i class="fa fa-crosshairs"></i></a>
+												<a href="javascript:;" class="geodistance"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+												<div class="geodistance_range elm-display-none">
+													<div class="distance-ml">Distance in&nbsp;( Miles )<span> 50</span></div>
+													<input type="hidden" name="geo_distance" value="50" class="geo_distance" />
+													<div class="geo_distance" id="geo_distance"></div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group tg-select">
+											<select>
+												<option value="">Seleccionar Ubicacion</option>
+												<option value="Santiago">Santiago</option>
+												<option value="Viña del Mar">Viña del Mar</option>
+												<option value="Osorno">Osorno</option>
+												<option value="Valdivia">Valdivia</option>
+												<option value="Puerto Montt">Puerto Mont</option>
+												<option value="Antofagasta">Antofagasta</option>
+											</select>
+										</div>
+										<div class="form-group tg-select">
+											<select>
+												<option>Region</option>
+												<option>RM</option>
+												<option>I</option>
+												<option>II</option>
+												<option>III</option>
+												<option>IV</option>
+												<option>V</option>
+												<option>VI</option>
+												<option>VII</option>
+												<option>VIII</option>
+												<option>IX</option>
+												<option>X</option>
+												<option>XI</option>
+												<option>XII</option>
+												<option>XIII</option>
+												<option>XIV</option>
+
+											</select>
+										</div>
+										<div class="form-group tg-select">
+											<select>
+												<option value="city">Ciudad</option>
+												<option>Buin</option>
+												<option>San Fernando</option>
+												<option>El Monte</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<input type="text" name="zipcode" class="form-control" placeholder="Codigo Postal">
+										</div>
+										<div class="form-group">
+											<div class="tg-checkbox">
+												<input type="checkbox" id="tg-onlywithphoto" name="findonlywithprofilephoto" value="Find Only With Profile Photo">
+												<label for="tg-onlywithphoto">Encontrar solo con foto de perfil</label>
+											</div>
+										</div>
+										<div class="tg-btns">
+											<button class="tg-btn" type="submit">Buscar Ahora</button>
+											<button class="tg-btn" type="reset">Reestablecer Todo</button>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="row">
+							<div class="tg-featuredprofiles">
+								<h1><span>Algunos de nuestros </span><span>Oferentes</span></h1>
+								<div id="tg-featuredprofileslider" class="tg-featuredprofileslider owl-carousel">
+									<div class="item tg-profile tg-featuredprofile">
+										<figure>
+											<img src=" <%= asset_path 'slider/img-01.jpg'%>" alt="image description">
+											<figcaption>
+												<div class="tg-featuredprofilecontent">
+													<div class="tg-contentbox">
+														<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-01.png'%>" alt="image description"></a></div>
+														<div class="tg-companycontent">
+															<ul class="tg-tags">
+																<!-- <li><a class="tg-tag tg-featuredtag" href="#">featured</a></li> -->
+																<li><a class="tg-tag tg-verifiedtag" href="#">verificado</a></li>
+															</ul>
+															<div class="tg-title">
+																<h3><a href="#">AP Consultorias </a></h3>
+															</div>
+															<ul class="tg-matadata">
+																<li><span class="tg-stars"><span></span></span></li>
+																<li>
+																	<i class="fa fa-thumbs-o-up"></i>
+																	<em>99% (1009 votes)</em>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<a class="tg-btn" href="listingdetail.html">View Profile</a>
+												</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="item tg-profile tg-featuredprofile">
+										<figure>
+											<img src=" <%= asset_path 'slider/img-02.jpg'%>" alt="image description">
+											<figcaption>
+												<div class="tg-featuredprofilecontent">
+													<div class="tg-contentbox">
+														<div class="tg-companylogo"><a href="#"><img src=" <%= asset_path 'logos/img-02.png'%>" alt="image description"></a></div>
+														<div class="tg-companycontent">
+															<ul class="tg-tags">
+																<li><a class="tg-tag tg-featuredtag" href="#">featured</a></li>
+																<li><a class="tg-tag tg-verifiedtag" href="#">verified</a></li>
+															</ul>
+															<div class="tg-title">
+																<h3><a href="#">ItDevelopment</a></h3>
+															</div>
+															<ul class="tg-matadata">
+																<li><span class="tg-stars"><span></span></span></li>
+																<li>
+																	<i class="fa fa-thumbs-o-up"></i>
+																	<em>99% (1009 votes)</em>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<a class="tg-btn" href="listingdetail.html">View Profile</a>
+												</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="item tg-profile tg-featuredprofile">
+										<figure>
+											<img src=" <%= asset_path 'slider/img-03.jpg'%>" alt="image description">
+											<figcaption>
+												<div class="tg-featuredprofilecontent">
+													<div class="tg-contentbox">
+														<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-01.png'%>" alt="image description"></a></div>
+														<div class="tg-companycontent">
+															<ul class="tg-tags">
+																<li><a class="tg-tag tg-featuredtag" href="#">featured</a></li>
+																<li><a class="tg-tag tg-verifiedtag" href="#">verified</a></li>
+															</ul>
+															<div class="tg-title">
+																<h3><a href="#">Indesign</a></h3>
+															</div>
+															<ul class="tg-matadata">
+																<li><span class="tg-stars"><span></span></span></li>
+																<li>
+																	<i class="fa fa-thumbs-o-up"></i>
+																	<em>99% (1009 votes)</em>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<a class="tg-btn" href="listingdetail.html">View Profile</a>
+												</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="item tg-profile tg-featuredprofile">
+										<figure>
+											<img src=" <%= asset_path 'slider/img-04.jpg'%>" alt="image description">
+											<figcaption>
+												<div class="tg-featuredprofilecontent">
+													<div class="tg-contentbox">
+														<div class="tg-companylogo"><a href="#"><img src=" <%= asset_path 'logos/img-01.png'%>" alt="image description"></a></div>
+														<div class="tg-companycontent">
+															<ul class="tg-tags">
+																<li><a class="tg-tag tg-featuredtag" href="#">featured</a></li>
+																<li><a class="tg-tag tg-verifiedtag" href="#">verified</a></li>
+															</ul>
+															<div class="tg-title">
+																<h3><a href="#">WebMachine</a></h3>
+															</div>
+															<ul class="tg-matadata">
+																<li><span class="tg-stars"><span></span></span></li>
+																<li>
+																	<i class="fa fa-thumbs-o-up"></i>
+																	<em>99% (1009 votes)</em>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<a class="tg-btn" href="listingdetail.html">View Profile</a>
+												</div>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--************************************
+				Home Slider End
+		*************************************-->
+		<!--************************************
+				Main Start
+		*************************************-->
+		<main id="tg-main" class="tg-main tg-haslayout">
+			<!--************************************
+					Top Categories Start
+			*************************************-->
+			<section class="tg-main-section tg-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+							<div class="tg-sectionhead">
+								<div class="tg-sectiontitle">
+									<h2>Algunas de Nuestras Categorias de servicios</h2>
+								</div>
+								<div class="tg-description">
+									<p>En Oklock podras encontrar diferentes categorias de servicios brindados por profesionales que demuestran sus calificaciones, las cuales puedes ver al momento de buscar un servicio y acceder al perfil del oferente.</p>
+								</div>
+							</div>
+						</div>
+						<div class="tg-topcategories">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-category">
+									<figure>
+										<img src="<%= asset_path 'categories/img-03.png'%>" alt="image description">
+										<figcaption class="tg-automotive">
+											<span class="lnr lnr-car tg-categoryicon"></span>
+											<span class="tg-categoryname">Automovil</span>
+											<a href="#" class="tg-themetag tg-tagjobcount">
+												<i class="fa fa-clone"></i>
+												<em>3215</em>
+											</a>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-category">
+									<figure>
+										<img src="<%= asset_path 'categories/img-02.png'%>" alt="image description">
+										<figcaption class="tg-beautypersonalcare">
+											<span class="lnr lnr-heart tg-categoryicon"></span>
+											<span class="tg-categoryname">Salud </span>
+											<a href="#" class="tg-themetag tg-tagjobcount">
+												<i class="fa fa-clone"></i>
+												<em>3045</em>
+											</a>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-category">
+									<figure>
+										<img src="<%= asset_path 'categories/img-03.png'%>" alt="image description">
+										<figcaption class="tg-business">
+											<span class="lnr lnr-apartment tg-categoryicon"></span>
+											<span class="tg-categoryname">Negocios</span>
+											<a href="#" class="tg-themetag tg-tagjobcount">
+												<i class="fa fa-clone"></i>
+												<em>2478</em>
+											</a>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-category">
+									<figure>
+										<img src="<%= asset_path 'categories/img-04.png'%>" alt="image description">
+										<figcaption class="tg-childcare">
+											<span class="lnr lnr-smile tg-categoryicon"></span>
+											<span class="tg-categoryname">RRHH</span>
+											<a href="#" class="tg-themetag tg-tagjobcount">
+												<i class="fa fa-clone"></i>
+												<em>2655</em>
+											</a>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-category">
+									<figure>
+										<img src="<%= asset_path 'categories/img-05.png'%>" alt="image description">
+										<figcaption class="tg-cleaning">
+											<span class="lnr lnr-magic-wand tg-categoryicon"></span>
+											<span class="tg-categoryname">Diseño</span>
+											<a href="#" class="tg-themetag tg-tagjobcount">
+												<i class="fa fa-clone"></i>
+												<em>2242</em>
+											</a>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-category">
+									<figure>
+										<img src="<%= asset_path 'categories/img-06.png'%>" alt="image description">
+										<figcaption class="tg-computermobile">
+											<span class="lnr lnr-laptop tg-categoryicon"></span>
+											<span class="tg-categoryname">IT &amp; Informatica</span>
+											<a href="#" class="tg-themetag tg-tagjobcount">
+												<i class="fa fa-clone"></i>
+												<em>1206</em>
+											</a>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="tg-btnbox">
+							<a class="tg-btn tg-btnviewall" href="#">view all</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					Top Categories End
+			*************************************-->
+			<!--************************************
+					Advantagies Start
+			*************************************-->
+			<section class="tg-main-section tg-haslayout tg-bglight">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+							<div class="tg-sectiontitle">
+								<h2>La manera mas facil de obtener un servicio.</h2>
+							</div>
+						</div>
+						<div class="tg-advantagies">
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<div class="tg-advantage tg-advantageplan">
+									<span class="tg-advantageicon">
+										<i class="tg-badge">1</i>
+										<em><img src="<%= asset_path 'advantagies/img-01.png'%>" alt="image description"></em>
+									</span>
+									<div class="tg-title">
+										<h3><a href="#">Busca tu servicio</a></h3>
+									</div>
+									<div class="tg-description">
+										<p>Encuentra lo que necesitas y verifica las capacidades y especificaciones del oferente, para el servicio que buscas contratar	.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<div class="tg-advantage tg-advantagechoosebest">
+									<span class="tg-advantageicon">
+										<i class="tg-badge">2</i>
+										<em><img src="<%= asset_path 'advantagies/img-02.png'%>" alt="image description"></em>
+									</span>
+									<div class="tg-title">
+										<h3><a href="#">Elije el servicio que prefieras</a></h3>
+									</div>
+									<div class="tg-description">
+										<p>Elije entre miles de profesionales y haz tu solicitud de servicio.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<div class="tg-advantage tg-advantagestressfree">
+									<span class="tg-advantageicon">
+										<i class="tg-badge">3</i>
+										<em><img src="<%= asset_path 'advantagies/img-03.png'%>" alt="image description"></em>
+									</span>
+									<div class="tg-title">
+										<h3><a href="#">Recibe tu servicio</a></h3>
+									</div>
+									<div class="tg-description">
+										<p>Una vez que tu solicitud sea aceptada cancela el valor acordado y espera por la entrega de tu servicio.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<div class="tg-advantage tg-advantageexperience">
+									<span class="tg-advantageicon">
+										<i class="tg-badge">4</i>
+										<em><img src="<%= asset_path 'advantagies/img-04.png'%>" alt="image description"></em>
+									</span>
+									<div class="tg-title">
+										<h3><a href="#">Evalua tu servicio</a></h3>
+									</div>
+									<div class="tg-description">
+										<p>Una vez que tu servicio haya sido entregado, evalua a tu oferente de servicio.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					Advantagies End
+			*************************************-->
+			<!--************************************
+				Latest Services Provider Start
+			*************************************-->
+			<section class="tg-main-section tg-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+							<div class="tg-sectionhead">
+								<div class="tg-sectiontitle">
+									<h2>Ultimos Oferentes registrados</h2>
+								</div>
+								<div class="tg-description">
+									<p> Contamos con una amplia gama de servicios profesionales, una comunidad en constante crecimiento.</p>
+								</div>
+							</div>
+						</div>
+						<div class="tg-latestserviceproviders">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-serviceprovider tg-automotive">
+									<figure class="tg-featuredimg">
+										<img src=" <%= asset_path 'serviceproviders/img-01.jpg'%>" alt="image description">
+										<figcaption>
+											<a class="tg-themetag tg-categorytag" href="javascript:void(0);">Automoviles</a>
+											<a class="tg-heart tg-liked" href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+										</figcaption>
+									</figure>
+									<div class="tg-serviceprovidercontent">
+										<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-01.png'%>" alt="image description"></a></div>
+										<div class="tg-companycontent">
+											<ul class="tg-tags">
+												<!-- <li><a class="tg-tag tg-featuredtag" href="#">featured</a></li> -->
+												<li><a class="tg-tag tg-verifiedtag" href="#">verificado</a></li>
+											</ul>
+											<div class="tg-title">
+												<h3><a href="#">Salinas &amp; Compañia</a></h3>
+											</div>
+											<ul class="tg-matadata">
+												<li><span class="tg-stars"><span></span></span></li>
+												<li>
+													<i class="fa fa-thumbs-o-up"></i>
+													<em>99% (1009 votes)</em>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-serviceprovider tg-beautypersonalcare">
+									<figure class="tg-featuredimg">
+										<img src="<%= asset_path 'serviceproviders/img-02.jpg'%>" alt="image description">
+										<figcaption>
+											<a class="tg-themetag tg-categorytag" href="javascript:void(0);">Salud &amp; Cuidados</a>
+											<a class="tg-heart" href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+										</figcaption>
+									</figure>
+									<div class="tg-serviceprovidercontent">
+										<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-02.png'%>" alt="image description"></a></div>
+										<div class="tg-companycontent">
+											<ul class="tg-tags">
+											<!-- 	<li><a class="tg-tag tg-featuredtag" href="#">featured</a></li> -->
+												<li><a class="tg-tag tg-verifiedtag" href="#">verificado</a></li>
+											</ul>
+											<div class="tg-title">
+												<h3><a href="#"> Clinica &amp; Los Coigues</a></h3>
+											</div>
+											<ul class="tg-matadata">
+												<li><span class="tg-stars"><span></span></span></li>
+												<li>
+													<i class="fa fa-thumbs-o-up"></i>
+													<em>95% (1009 votes)</em>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-serviceprovider tg-business">
+									<figure class="tg-featuredimg">
+										<img src="<%= asset_path 'serviceproviders/img-03.jpg'%>" alt="image description">
+										<figcaption>
+											<a class="tg-themetag tg-categorytag" href="javascript:void(0);">Negocios</a>
+											<a class="tg-heart tg-liked" href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+										</figcaption>
+									</figure>
+									<div class="tg-serviceprovidercontent">
+										<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-03.png'%>" alt="image description"></a></div>
+										<div class="tg-companycontent">
+											<ul class="tg-tags">
+												<!-- <li><a class="tg-tag tg-featuredtag" href="#">featured</a></li> -->
+												<li><a class="tg-tag tg-verifiedtag" href="#">verificado</a></li>
+											</ul>
+											<div class="tg-title">
+												<h3><a href="#"></a></h3>
+											</div>
+											<ul class="tg-matadata">
+												<li><span class="tg-stars"><span></span></span></li>
+												<li>
+													<i class="fa fa-thumbs-o-up"></i>
+													<em>80% (1009 votes)</em>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-serviceprovider tg-childcare">
+									<figure class="tg-featuredimg">
+										<img src="<%= asset_path 'serviceproviders/img-04.jpg'%>" alt="image description">
+										<figcaption>
+											<a class="tg-themetag tg-categorytag" href="javascript:void(0);">Bienestar</a>
+											<a class="tg-heart tg-liked" href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+										</figcaption>
+									</figure>
+									<div class="tg-serviceprovidercontent">
+										<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-04.png'%>" alt="image description"></a></div>
+										<div class="tg-companycontent">
+											<ul class="tg-tags">
+												<li><a class="tg-tag tg-featuredtag" href="#">featured</a></li>
+												<li><a class="tg-tag tg-verifiedtag" href="#">verified</a></li>
+											</ul>
+											<div class="tg-title">
+												<h3><a href="#">Silvana Hoggatt</a></h3>
+											</div>
+											<ul class="tg-matadata">
+												<li><span class="tg-stars"><span></span></span></li>
+												<li>
+													<i class="fa fa-thumbs-o-up"></i>
+													<em>99% (1009 votes)</em>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-serviceprovider tg-cleaning">
+									<figure class="tg-featuredimg">
+										<img src="<%= asset_path 'serviceproviders/img-05.jpg'%>" alt="image description">
+										<figcaption>
+											<a class="tg-themetag tg-categorytag" href="javascript:void(0);">Diseño</a>
+											<a class="tg-heart tg-liked" href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+										</figcaption>
+									</figure>
+									<div class="tg-serviceprovidercontent">
+										<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-05.png'%>" alt="image description"></a></div>
+										<div class="tg-companycontent">
+											<ul class="tg-tags">
+												<li><a class="tg-tag tg-featuredtag" href="#">featured</a></li>
+												<li><a class="tg-tag tg-verifiedtag" href="#">verified</a></li>
+											</ul>
+											<div class="tg-title">
+												<h3><a href="#">Distopia</a></h3>
+											</div>
+											<ul class="tg-matadata">
+												<li><span class="tg-stars"><span></span></span></li>
+												<li>
+													<i class="fa fa-thumbs-o-up"></i>
+													<em>99% (1009 votes)</em>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+								<div class="tg-serviceprovider tg-computermobile">
+									<figure class="tg-featuredimg">
+										<img src="<%= asset_path 'serviceproviders/img-06.jpg'%>" alt="image description">
+										<figcaption>
+											<a class="tg-themetag tg-categorytag" href="javascript:void(0);">Computer &amp; Mobile Service</a>
+											<a class="tg-heart tg-liked" href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+										</figcaption>
+									</figure>
+									<div class="tg-serviceprovidercontent">
+										<div class="tg-companylogo"><a href="#"><img src="<%= asset_path 'logos/img-06.png'%>" alt="image description"></a></div>
+										<div class="tg-companycontent">
+											<ul class="tg-tags">
+												<li><a class="tg-tag tg-featuredtag" href="#">featured</a></li>
+												<li><a class="tg-tag tg-verifiedtag" href="#">verified</a></li>
+											</ul>
+											<div class="tg-title">
+												<h3><a href="#">Eldridge Hemenway</a></h3>
+											</div>
+											<ul class="tg-matadata">
+												<li><span class="tg-stars"><span></span></span></li>
+												<li>
+													<i class="fa fa-thumbs-o-up"></i>
+													<em>99% (1009 votes)</em>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+				Latest Services Provider End
+			*************************************-->
+			<!--************************************
+					Testimonials Start
+			*************************************-->
+			<section class="tg-main-section tg-haslayout tg-bglight">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<figure class="tg-clientlargedp">
+								<img src="<%= asset_path 'testimonials/img-01.jpg'%>" alt="image description">
+								<span class="tg-quotes"><i class="fa fa-quote-right"></i></span>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<div class="tg-testimonials">
+								<div id="tg-testimonialcontentslider" class="owl-carousel tg-testimonialcontentslider">
+									<div class="item">
+										<div class="tg-testimonial">
+											<h2>Max Pereira</h2>
+											<h3>Rapido y resolutivo</h3>
+											<blockquote><q>Me ayudo mucho en momentos de apuro, para un diseño que no deberia tomar mas de una semana, y asi fue.</q></blockquote>
+										</div>
+									</div>
+									<div class="item">
+										<div class="tg-testimonial">
+											<h2>Sebastian Diaz</h2>
+											<h3>Practico y Rapido</h3>
+											<blockquote><q>Buenisima aplicacion, me ayudo a encontrar el equipo calificado que necesitaba para desarrollar las app para mi empresa.</q></blockquote>
+										</div>
+									</div>
+									<div class="item">
+										<div class="tg-testimonial">
+											<h2>Jorge Mendez</h2>
+											<h3>Me ayudo en momentos de apuro</h3>
+											<blockquote><q>Consectetur adipisicing elit sed eiusmod tempor incididunt labore et dolore magna aliqua eantnim adia minim veniam quis nostrud exercitation ullamco laboris.</q></blockquote>
+										</div>
+									</div>
+									<div class="item">
+										<div class="tg-testimonial">
+											<h2>Angel Morales</h2>
+											<h3>Grandiosa experiencia</h3>
+											<blockquote><q>No habia encontrado una herramienta que me permitiera conseguir servicios tan facil y a cualquier hora del dia.</q></blockquote>
+										</div>
+									</div>
+									<div class="item">
+										<div class="tg-testimonial">
+											<h2>Ricardo Wessel</h2>
+											<h3>Un alivio</h3>
+											<blockquote><q>Logre encontrar lo que necesitaba en poco tiempo, con todas las especificaciones que requeria mi proyecto y de forma gratuita, que mejor? chao consultoras de RRHH.</q></blockquote>
+										</div>
+									</div>
+								<!-- 	<div class="item">
+										<div class="tg-testimonial">
+											<h2>Sandie</h2>
+											<h3>A Truly Amazing Experience</h3>
+											<blockquote><q>Consectetur adipisicing elit sed eiusmod tempor incididunt labore et dolore magna aliqua eantnim adia minim veniam quis nostrud exercitation ullamco laboris.</q></blockquote>
+										</div>
+									</div> -->
+									<!-- <div class="item">
+										<div class="tg-testimonial">
+											<h2></h2>
+											<h3>A Truly Amazing Experience</h3>
+											<blockquote><q>Consectetur adipisicing elit sed eiusmod tempor incididunt labore et dolore magna aliqua eantnim adia minim veniam quis nostrud exercitation ullamco laboris.</q></blockquote>
+										</div>
+									</div> -->
+								</div>
+								<div id="tg-testimonialnavigationslider" class="owl-carousel tg-testimonialnavigationslider">
+									<div class="item">
+										<figure><img src="<%= asset_path 'testimonials/img-01.jpg'%> " alt="image description"></figure>
+									</div>
+									<div class="item">
+										<figure><img src="<%= asset_path 'testimonials/img-02.jpg'%>" alt="image description"></figure>
+									</div>
+									<div class="item">
+										<figure><img src="<%= asset_path 'testimonials/img-03.jpg'%>" alt="image description"></figure>
+									</div>
+									<div class="item">
+										<figure><img src="<%= asset_path 'testimonials/img-04.jpg'%>" alt="image description"></figure>
+									</div>
+									<div class="item">
+										<figure><img src="<%= asset_path 'testimonials/img-05.jpg'%>" alt="image description"></figure>
+									</div>
+									<div class="item">
+										<figure><img src="<%= asset_path 'testimonials/img-06.jpg'%>" alt="image description"></figure>
+									</div>
+									<div class="item">
+										<figure><img src="<%= asset_path 'testimonials/img-07.jpg'%>"></figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					Testimonials End
+			*************************************-->
+			<!--************************************
+					News & Posts Start
+			*************************************-->
+			<section class="tg-main-section tg-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+							<div class="tg-sectionhead">
+								<div class="tg-sectiontitle">
+									<h2>Noticias</h2>
+								</div>
+								<div class="tg-description">
+									<p>Enterate de las ultimas informaciones relevantes del uso de Oklock</p>
+								</div>
+							</div>
+						</div>
+						<div class="tg-newsandposts">
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<article class="tg-post">
+									<figure class="tg-featuredimg">
+										<a href="javascript:void(0);"><img src="%= asset_path 'post/img-01.jpg'%>" alt="image description"></a>
+									</figure>
+									<div class="tg-postcontent">
+										<div class="tg-title">
+											<h3><a href="#">Distopia</a></h3>
+										</div>
+										<ul class="tg-postmatadata">
+											<li>
+												<a href="#">
+													<i class="lnr lnr-user"></i>
+													<span>by: Sebastian Quevedo</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="lnr lnr-calendar-full"></i>
+													<span>June 27, 2017</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<article class="tg-post">
+									<figure class="tg-featuredimg">
+										<a href="javascript:void(0);"><img src="images/post/img-02.jpg" alt="image description"></a>
+									</figure>
+									<div class="tg-postcontent">
+										<div class="tg-title">
+											<h3><a href="#">Distopia Design</a></h3>
+										</div>
+										<ul class="tg-postmatadata">
+											<li>
+												<a href="#">
+													<i class="lnr lnr-user"></i>
+													<span>BY: Tamika Darbonne</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="lnr lnr-calendar-full"></i>
+													<span>June 27, 2017</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<article class="tg-post">
+									<figure class="tg-featuredimg">
+										<a href="javascript:void(0);"><img src="images/post/img-03.jpg" alt="image description"></a>
+									</figure>
+									<div class="tg-postcontent">
+										<div class="tg-title">
+											<h3><a href="#">Distopia Design</a></h3>
+										</div>
+										<ul class="tg-postmatadata">
+											<li>
+												<a href="#">
+													<i class="lnr lnr-user"></i>
+													<span>BY: Tamika Darbonne</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="lnr lnr-calendar-full"></i>
+													<span>June 27, 2017</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+								<article class="tg-post">
+									<figure class="tg-featuredimg">
+										<a href="javascript:void(0);"><img src="images/post/img-04.jpg" alt="image description"></a>
+									</figure>
+									<div class="tg-postcontent">
+										<div class="tg-title">
+											<h3><a href="#">Distopia Design</a></h3>
+										</div>
+										<ul class="tg-postmatadata">
+											<li>
+												<a href="#">
+													<i class="lnr lnr-user"></i>
+													<span>BY: Tamika Darbonne</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="lnr lnr-calendar-full"></i>
+													<span>June 27, 2017</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					News & Posts End
+			*************************************-->
+		</main>
+		<!--************************************
+				Main End
+		*************************************-->
+
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+
+</body>
+</html>
