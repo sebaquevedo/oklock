@@ -31,6 +31,7 @@ html,
 body {
 	position: relative;
 	height: 100%;
+	
 }
 body {
 	color: #919191;
@@ -2251,7 +2252,10 @@ body.tg-login .tg-useradminbox,
 			Footer Style						
 ==============================================*/
 .tg-footer{
-	background: url(../images/img-01.jpg) no-repeat 50% 100%;
+	background: url(img-01.jpg) no-repeat 50% 100%;
+
+	<!-- background-image: asset_path("img-01.jpg") no-repeat 50% 100%; -->
+	<!-- background-image: url(img-01.jpg) no-repeat 50% 100%; -->
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;

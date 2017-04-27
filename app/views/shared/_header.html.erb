@@ -1,7 +1,6 @@
 <!-- ************************************
 				Header Start
 		*************************************--> 
-	
 	<header id="tg-header" class="tg-header tg-haslayout">
 			<div class="tg-topbar tg-haslayout">
 				<div class="container">
@@ -44,22 +43,31 @@
 									</li>
 								</ul>
 							</div> -->
+							 <ul class="nav navbar-nav navbar-right">
+						        <% if current_user.nil? %>
+						          <li><a href="<%= new_user_registration_path %>">Registrarse</a></li>
+						          <li><a href="<%= new_user_session_path %>">Ingresa</a></li>
+						        <% end %>
+						      </ul>
+
 							<% if user_signed_in? %>
 							<div class="tg-adminbox">
 								<div class="tg-loginregister">
-									<a class="tg-btnlogin" href="javascript:void(0);">Login</a>
-									<a class="tg-btnregister" href="javascript:void(0);">Register</a>
+									<a class="tg-btnlogin" href="javascript:void(0);">Ingresa</a>
+									<a class="tg-btnregister" href="javascript:void(0);">Registrate</a>
 								</div>
 								<div class="tg-useradminbox">
 									<div class="tg-themedropdown tg-userdropdown">
 										<a href="javascript:void(0);" id="tg-usermenu" class="tg-btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											
+											<% if current_user.image.present? %>
 											<em><%= image_tag(current_user.image , :size => "40x0" ) %></em>
 											
 											<span>Hi! <%= current_user.name %></span>
 											<i class="fa fa-angle-down"></i>
-											
-											
+											<% elsif !current_user.image.present? && current_user.email.present? %>
+												<em><%= image_tag(asset_path('default.jpg') , :size => "40x0" ) %></em>
+												<span>Hi! <%= current_user.email %></span>
+											<% end %>
 										</a>
 										<div class="tg-dropdownmenu tg-usermenu" aria-labelledby="tg-usermenu">
 											<nav id="tg-dashboardnav" class="tg-dashboardnav">
@@ -198,7 +206,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 col-xs-12">
-							<strong class="tg-logo"><a href="index.html"><img src="<%= asset_path 'logo.png'%>" alt="image description"></a></strong>
+							<strong class="tg-logo"><a href="<%= root_path %>"><img src="<%= asset_path 'logo.png'%>" alt="image description"></a></strong>
 							<div class="tg-rightarea">
 								<nav id="tg-nav" class="tg-nav">
 									<div class="navbar-header">
@@ -390,13 +398,16 @@
 										</ul>
 									</div>
 								</nav>
-								<a class="tg-btn tg-btnpostanewjob" href="dashboard.html">Post A New Job</a>
+								<% if !current_user.nil? %>
+								<a class="tg-btn tg-btnpostanewjob" href="dashboard.html">Agrega un nuevo servicio</a>
+								<%end %>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</header>
 		<!--************************************
 				Header End
-		*************************************
+		*************************************-->
