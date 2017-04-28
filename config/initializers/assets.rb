@@ -25,7 +25,7 @@ Rails.application.config.assets.precompile += %w( main.js )
 
 Rails.application.config.assets.precompile += %w( normalize.css )
 
-
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
 Rails.application.config.assets.precompile += %w( scrollbar.css )
 Rails.application.config.assets.precompile += %w( jquery-ui.css )
 Rails.application.config.assets.precompile += %w( prettyPhoto.css )
