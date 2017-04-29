@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :enterprises
+  resources :studies
 	devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", registrations: 'users/registrations' }
 	
 	get 'home/index'

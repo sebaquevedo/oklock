@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @study.title %>
+</p>
+
+<p>
+  <strong>Initdate:</strong>
+  <%= @study.initdate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @study.enddate %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @study.grade %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @study.user %>
+</p>
+
+<%= link_to 'Edit', edit_study_path(@study) %> |
+<%= link_to 'Back', studies_path %>
