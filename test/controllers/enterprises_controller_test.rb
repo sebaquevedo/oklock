@@ -17,7 +17,7 @@ class EnterprisesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create enterprise" do
     assert_difference('Enterprise.count') do
-      post enterprises_url, params: { enterprise: { address: @enterprise.address, name: @enterprise.name, references: @enterprise.references, ticker: @enterprise.ticker, type: @enterprise.type } }
+      post enterprises_url, params: { enterprise: { industry: @enterprise.industry, name: @enterprise.name, ticker: @enterprise.ticker, type: @enterprise.type, user_id: @enterprise.user_id } }
     end
 
     assert_redirected_to enterprise_url(Enterprise.last)
@@ -34,7 +34,7 @@ class EnterprisesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update enterprise" do
-    patch enterprise_url(@enterprise), params: { enterprise: { address: @enterprise.address, name: @enterprise.name, references: @enterprise.references, ticker: @enterprise.ticker, type: @enterprise.type } }
+    patch enterprise_url(@enterprise), params: { enterprise: { industry: @enterprise.industry, name: @enterprise.name, ticker: @enterprise.ticker, type: @enterprise.type, user_id: @enterprise.user_id } }
     assert_redirected_to enterprise_url(@enterprise)
   end
 

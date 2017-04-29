@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  language: MyString
+  proficiency: MyString
+  certificate: false
+  system_of_measure: MyString
+  score: 1
+  user: one
+
+two:
+  language: MyString
+  proficiency: MyString
+  certificate: false
+  system_of_measure: MyString
+  score: 1
+  user: two

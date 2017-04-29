@@ -2,14 +2,10 @@
 
 one:
   name: MyString
-  type: 
-  industry: MyString
-  ticker: MyString
+  link: MyString
   user: one
 
 two:
   name: MyString
-  type: 
-  industry: MyString
-  ticker: MyString
+  link: MyString
   user: two

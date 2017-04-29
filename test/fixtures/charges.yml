@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  summary: MyString
+  start_date: 2017-04-29
+  end_date: 2017-04-29
+  is_current: false
+  enterprise: one
+  org_level: MyString
+  market_responsability: MyString
+
+two:
+  title: MyString
+  summary: MyString
+  start_date: 2017-04-29
+  end_date: 2017-04-29
+  is_current: false
+  enterprise: two
+  org_level: MyString
+  market_responsability: MyString

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @language.language %>
+</p>
+
+<p>
+  <strong>Proficiency:</strong>
+  <%= @language.proficiency %>
+</p>
+
+<p>
+  <strong>Certificate:</strong>
+  <%= @language.certificate %>
+</p>
+
+<p>
+  <strong>System of measure:</strong>
+  <%= @language.system_of_measure %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @language.score %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @language.user %>
+</p>
+
+<%= link_to 'Edit', edit_language_path(@language) %> |
+<%= link_to 'Back', languages_path %>

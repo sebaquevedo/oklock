@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @charge.title %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @charge.summary %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @charge.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @charge.end_date %>
+</p>
+
+<p>
+  <strong>Is current:</strong>
+  <%= @charge.is_current %>
+</p>
+
+<p>
+  <strong>Enterprise:</strong>
+  <%= @charge.enterprise %>
+</p>
+
+<p>
+  <strong>Org level:</strong>
+  <%= @charge.org_level %>
+</p>
+
+<p>
+  <strong>Market responsability:</strong>
+  <%= @charge.market_responsability %>
+</p>
+
+<%= link_to 'Edit', edit_charge_path(@charge) %> |
+<%= link_to 'Back', charges_path %>

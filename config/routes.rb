@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :services
+  resources :languages
+  resources :charges
   resources :enterprises
   resources :studies
 	devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", registrations: 'users/registrations' }
