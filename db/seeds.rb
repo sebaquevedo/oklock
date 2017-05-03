@@ -13,7 +13,8 @@ a = User.create(email:'seb@seb.cl',password: '123456',name:'seba')
 
 d1 = 4.year.ago
 d2 = 1.month.ago
-
+d3 = 5.year.ago
+d4 = 1.year.ago
 
 Study.create(user_id: a.id,title: 'Informatic Engineer',grade:'Profesional', initdate:d1,enddate:d2)
-
+Study.create(user_id: a.id,title: "Data Scientist",grade:"Mba", initdate:d3,enddate:d4)

@@ -5,13 +5,13 @@ Rails.application.routes.draw do
   resources :charges
   resources :enterprises
   resources :studies
-  # resources :users, only: [:show]
 	devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", registrations: 'users/registrations' }
-	
+	resources :users
 	get 'home/index'
 	root 'home#landing'
 	  authenticated :user do
     root to: 'welcome#index', as: :authenticated_root
+  
   end
 
   

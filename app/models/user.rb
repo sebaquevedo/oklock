@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :Socials
   has_many :Languages
   has_many :Services
+  mount_uploader :avatar, AvatarUploader
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable,:omniauthable, :omniauth_providers => [ :linkedin ]
 

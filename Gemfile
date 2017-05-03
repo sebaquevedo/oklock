@@ -13,6 +13,7 @@ gem 'omniauth', '~> 1.3', '>= 1.3.1'
 gem 'omniauth-linkedin'
 gem 'linkedin'
 gem 'pg'
+gem 'carrierwave'
 
 
 # Use Puma as the app server
@@ -32,6 +33,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+gem 'dotenv-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -53,6 +55,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'railroady'
+  gem 'pry-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

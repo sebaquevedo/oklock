@@ -44,7 +44,8 @@
 								</ul>
 							</div> -->
 							 <ul class="nav navbar-nav navbar-right">
-						        <% if current_user.nil? %>
+
+						        <% if !user_signed_in? %>
 						          <li><a href="<%= new_user_registration_path %>">Registrarse</a></li>
 						          <li><a href="<%= new_user_session_path %>">Ingresa</a></li>
 						        <% end %>
@@ -52,19 +53,18 @@
 
 							<% if user_signed_in? %>
 							<div class="tg-adminbox">
-								<div class="tg-loginregister">
-									<a class="tg-btnlogin" href="javascript:void(0);">Ingresa</a>
-									<a class="tg-btnregister" href="javascript:void(0);">Registrate</a>
-								</div>
+								
 								<div class="tg-useradminbox">
 									<div class="tg-themedropdown tg-userdropdown">
 										<a href="javascript:void(0);" id="tg-usermenu" class="tg-btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<% if current_user.image.present? %>
+											<% if current_user.image.present?  %>
 											<em><%= image_tag(current_user.image , :size => "40x0" ) %></em>
+												<% elsif current_user.avatar.present? %>
+												<em><%= image_tag(current_user.avatar , :size => "40x0" ) %></em>
 											
 											<span>Hi! <%= current_user.name %></span>
 											<i class="fa fa-angle-down"></i>
-											<% elsif !current_user.image.present? && current_user.email.present? %>
+											<% elsif !current_user.image.present? && !current_user.avatar.present? && current_user.email.present? %>
 												<em><%= image_tag(asset_path('default.jpg') , :size => "40x0" ) %></em>
 												<span>Hi! <%= current_user.email %></span>
 											<% end %>
@@ -79,10 +79,10 @@
 														</a>
 													</li>
 													<li>
-														<a href="dashboardprofilesetting.html">
-															<i class="lnr lnr-cog"></i>
-															<span>Profile Settings</span>
-														</a>
+															
+
+															<%= link_to(raw('<i class="lnr lnr-user"></i><span>Perfil</span>'), current_user)  %>
+															
 													</li>
 													<li>
 														<a href="dashboardbusinesshours.html">
