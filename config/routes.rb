@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :charges
   resources :enterprises
   resources :studies
+  # resources :users, only: [:show]
 	devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", registrations: 'users/registrations' }
 	
 	get 'home/index'
