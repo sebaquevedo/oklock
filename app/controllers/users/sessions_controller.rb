@@ -28,8 +28,8 @@ class Users::SessionsController < Devise::SessionsController
   if resource.valid_password?(params[:password])
     sign_in :user, resource
 
-    data = {:code => "OK"}
-     return render :json => data
+    
+     return render :json => resource
 
   end
 
@@ -49,7 +49,10 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   def invalid_login_attempt
+    
     set_flash_message(:alert, :invalid)
-    render json: flash[:alert], status: 401
+    data = {:code => "NOK"}
+    render json: data  
+    # render json: flash[:alert], status: 401
   end
 end

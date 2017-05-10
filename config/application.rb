@@ -7,6 +7,8 @@ require 'carrierwave'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+
 module Oklock
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -14,6 +16,15 @@ module Oklock
     # -- all .rb files in that directory are automatically loaded.
     # config/application.rb+
     config.assets.initialize_on_precompile = false
+	
+    
+      config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+    end
+
 	
   end
 end

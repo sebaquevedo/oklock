@@ -14,6 +14,7 @@ gem 'omniauth-linkedin'
 gem 'linkedin'
 gem 'pg'
 gem 'carrierwave'
+gem 'rack-cors', :require => 'rack/cors'
 
 
 # Use Puma as the app server
