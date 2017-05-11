@@ -17,10 +17,13 @@ before_action :configure_account_update_params, only: [:update]
   #   super
   # end
 
+  
+
   # PUT /resource
-  # def update
-  #   super
-  # end
+  def update
+    data = {:code => "NOK"}
+    render json: data  
+  end
 
   # DELETE /resource
   # def destroy
@@ -46,7 +49,7 @@ before_action :configure_account_update_params, only: [:update]
    
   # If you have extra params to permit, append them to the sanitizer.
   def configure_account_update_params
-    devise_parameter_sanitizer.permit(:account_update, keys: [:uid,:name,:headline,:image,:provider])
+    devise_parameter_sanitizer.permit(:account_update, keys: [ :id,:uid,:avatar,:name,:headline,:image,:provider])
   end
 
   # The path used after sign up.

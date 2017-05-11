@@ -5,19 +5,7 @@ class Users::SessionsController < Devise::SessionsController
   # def new
   #   super
   # end
-   def new
-
-        payload = {}
-
-        if params[:user]
-
-            payload = { :errors => ["We do not recognize that username and password combination."] }
-
-        end
-
-        return render :status => 400, :json => payload
-
-    end
+ 
   
 
   # POST /resource/sign_in
