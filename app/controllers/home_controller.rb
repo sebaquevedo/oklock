@@ -7,7 +7,15 @@ class HomeController < ApplicationController
   end
 
   def editphoto
-  	data = {:code => "OK"}
-    render json: data  
+  	p params
+  	@user = User.find(params[:id])
+  	@user.avatar = params[:avatar]
+  	if @user.save
+  	 	data = {code: @user}
+    	return render json: data  
+    end
+  
+
   end
-end
+
+ end
